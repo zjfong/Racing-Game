@@ -1,0 +1,29 @@
+#game-board {
+  background-color: red;
+  height: 400px;
+}
+
+.car {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  vertical-align: top;
+}
+
+#car1 {
+  display: inline-block;
+  background-color: blue;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+
+}
+
+#car2 {
+  display: inline-block;
+  background-color: white;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: -0px;
+}
+
