@@ -1,12 +1,43 @@
 #game-board {
   background-color: red;
-  height: 250px;
+  height: 550px;
+}
+
+#road1 {
+  display: inline-block;
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  margin-top: 350px;
+
+  background-color: black;
+}
+
+#road2 {
+  display: inline-block;
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  margin-top: 510px;
+
+  background-color: black;
+}
+
+hr {
+  position: absolute;
+  border:none;
+  border-top:10px dashed yellow;
+  color:black;
+  background-color:black;
+  height:10px;
+  width:100%;
+  margin-top: 500px
 }
 
 .car {
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 140px;
+  width: 390px;
   vertical-align: top;
 }
 
@@ -16,6 +47,7 @@
   position: absolute;
   margin-top: 0px;
   margin-left: 0px;
+  overflow: auto;
 
 }
 
@@ -23,7 +55,8 @@
   display: inline-block;
   background-color: white;
   position: absolute;
-  margin-top: 100px;
-  margin-left: -0px;
+  margin-top: 140px;
+  margin-left: 0px;
+  overflow: auto;
 }
 
