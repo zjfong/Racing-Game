@@ -4,6 +4,34 @@
   width: 100%;
 }
 
+#crowd {
+  position: absolute;
+  width: 99%;
+  height: 350px;
+}
+
+#stoplight {
+  padding: 10px;
+  position: absolute;
+  border-radius: 5%;
+  background-color: rgb(64,64,64);
+  height: 260px;
+  width: 100px;
+  margin: 30px 70%;
+}
+
+.light {
+  margin-top: 10px;
+  margin-left: 15px;
+  border-radius: 50%;
+  background-color: black;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
 #score-board {
   padding: 10px;
   position: absolute;
@@ -12,9 +40,9 @@
   color: white;
   font-weight: strong;
   font-size: 50px;
-  height: 250px;
+  height: 260px;
   width: 500px;
-  margin: 30px 30%;
+  margin: 30px 25%;
   text-align: center;
 }
 

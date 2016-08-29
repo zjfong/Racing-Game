@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 var car1score = 0;
 var car2score = 0;
-var ableMove = true;
+var ableMove = false;
   //var car1left = $('#car1').css('margin-left');
   //var car2left = $('#car2').css('margin-left');
 
@@ -79,13 +79,54 @@ var ableMove = true;
   };
   });
 
-
-
-  $('.btn-warning').click(function(event) {
+  $('.btn-default').click(function(event) {
     $('#car1').css('margin-left', '50px');
     $('#car2').css('margin-left', '50px');
-    ableMove = true;
+    startGreenTimer();
+    startRedTimer();
+    startYellowTimer();
+    startClearTimer();
   });
+
+
+
+
+  function startRedTimer(){
+    setTimeout(redTimer, 1000);
+  }
+  function startYellowTimer(){
+    setTimeout(yellowTimer, 2000);
+  }
+  function startGreenTimer(){
+    setTimeout(greenTimer, 3000);
+  }
+  function startClearTimer(){
+    setTimeout(clearTimer, 4000);
+  }
+
+  function redTimer(){
+    $('#red').css('background-color', 'red');
+  }
+  function yellowTimer(){
+    $('#red').css('background-color', 'black')
+    $('#yellow').css('background-color', 'yellow')
+  }
+  function greenTimer(){
+    $('#yellow').css('background-color', 'black')
+    $('#green').css('background-color', 'green')
+    ableMove = true;
+  }
+  function clearTimer(){
+    $('#green').css('background-color', 'black')
+  }
+
+
+
+  // $('.btn-warning').click(function(event) {
+  //   $('#car1').css('margin-left', '50px');
+  //   $('#car2').css('margin-left', '50px');
+  //   ableMove = true;
+  // });
 
   $('.btn-success').click(function(event) {
     $('#car1').css('margin-left', '50px');
