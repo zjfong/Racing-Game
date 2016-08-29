@@ -79,13 +79,17 @@ var ableMove = false;
   };
   });
 
+var buttonClicked = false;
   $('.btn-default').click(function(event) {
-    $('#car1').css('margin-left', '50px');
-    $('#car2').css('margin-left', '50px');
-    startGreenTimer();
-    startRedTimer();
-    startYellowTimer();
-    startClearTimer();
+    if (buttonClicked === false){
+      buttonClicked = true;
+      $('#car1').css('margin-left', '50px');
+      $('#car2').css('margin-left', '50px');
+      startGreenTimer();
+      startRedTimer();
+      startYellowTimer();
+      startClearTimer();
+    };
   });
 
 
@@ -114,10 +118,13 @@ var ableMove = false;
   function greenTimer(){
     $('#yellow').css('background-color', 'black')
     $('#green').css('background-color', 'green')
+    $('#text').append("GO!");
     ableMove = true;
   }
   function clearTimer(){
     $('#green').css('background-color', 'black')
+    $('#text').empty();
+    buttonClicked = false;
   }
 
 
