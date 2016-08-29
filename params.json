@@ -1,0 +1,6 @@
+{
+  "name": "Racing-game",
+  "tagline": "",
+  "body": "<!--\r\nCreator: <Zachary Fong>\r\nLocation: SF\r\n-->\r\n#Racing Game\r\nracing game in which two players use the keyboard to control \"cars\" \r\nthat race across the screen.\r\n\r\n##user stories:\r\n1. two player game\r\n2. a player sees their car and the finish line\r\n3. player 1 presses 'D' to move and player 2 presses 'L' to move\r\n4. a player wins when they cross the finish line\r\n\r\n\r\n##data structures:\r\n1. player constructor\r\n\t- player1\r\n\t- player2\r\n\r\n\r\n2. car constructor\r\n\t- car1\r\n\t- car2\r\n\t- .eventlistener('press'. move())\r\n\r\n3. road\r\n\t- background?\r\n\t- starting line\r\n\t- finish line\r\n\r\n4. start game button?\r\n\t- countdown?\r\n\r\n5. reset button\r\n6. game over/win conditions\r\n\r\n\r\n\r\n\r\n##development stories:\r\n1. user can see car, road, finish line\r\n2. user presses start game to begin countdown\r\n3. when countdown finish, cars can move\r\n4. crossing finish line adds to score\r\n\r\n\r\n##potential challenges\r\n1. how to move car\r\n2. countdown\r\n3. styling\r\n\r\n\r\n\r\n\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
