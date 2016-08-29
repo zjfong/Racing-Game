@@ -66,6 +66,7 @@ var ableMove;
           car1score++;
           $('#score1').empty();
           $('#score1').append(car1score);
+          $('#text').append("Player 1 Wins!");
           ableMove = false;
           console.log("help")
     };
@@ -75,6 +76,7 @@ var ableMove;
           car2score++;
           $('#score2').empty();
           $('#score2').append(car2score);
+          $('#text').append("Player 2 Wins!");
           ableMove = false;
           console.log("help")
     };
@@ -87,6 +89,7 @@ var buttonClicked = false;
     if (buttonClicked === false){
       ableMove = false;
       buttonClicked = true;
+      $('#text').empty();
       $('#car1').css('margin-left', '50px');
       $('#car2').css('margin-left', '50px');
       startGreenTimer();
@@ -150,6 +153,7 @@ var buttonClicked = false;
     $('#score2').empty();
     $('#score2').append(0);
     car2score = 0;
+    $('#text').empty();
 
   });
 
