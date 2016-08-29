@@ -48,13 +48,17 @@
   position: absolute;
   background-color: rgb(64,64,64);
   border-radius: 5%;
-  color: white;
+  color: #6666ff;
   font-weight: strong;
   font-size: 50px;
   height: 260px;
   width: 500px;
   margin: 30px 25%;
   text-align: center;
+}
+
+#race {
+  color: #9999ff;
 }
 
 .players {
@@ -102,6 +106,15 @@ hr {
   height: 10px;
   width: 99%;
   margin-top: 500px
+}
+
+#start-line {
+  position: absolute;
+  background-color: gray;
+  margin-top: 350px;
+  margin-left: 220px;
+  height: 310px;
+  width: 10px;
 }
 
 .car {

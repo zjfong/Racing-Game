@@ -85,6 +85,7 @@ var ableMove;
 var buttonClicked = false;
   $('.btn-default').click(function(event) {
     if (buttonClicked === false){
+      ableMove = false;
       buttonClicked = true;
       $('#car1').css('margin-left', '50px');
       $('#car2').css('margin-left', '50px');
