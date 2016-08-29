@@ -141,13 +141,16 @@ var buttonClicked = false;
 
   //Reset Score button - resets score, car position
   $('.btn-success').click(function(event) {
+    ableMove = false;
     $('#car1').css('margin-left', '50px');
     $('#car2').css('margin-left', '50px');
     $('#score1').empty();
     $('#score1').append(0);
+    car1score = 0;
     $('#score2').empty();
     $('#score2').append(0);
-    ableMove = true;
+    car2score = 0;
+
   });
 
   //if(car1left === ){
