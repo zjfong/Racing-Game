@@ -28,7 +28,7 @@ $(document).ready(function() {
       console.log($('#car1').css('margin-left'));
       //console.log(event.keyCode);
       if(car1left === "930px"){
-        $('#score').append("car1wins");
+        $('#player3').append("car1wins");
 
       }
     };

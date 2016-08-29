@@ -1,6 +1,37 @@
 #game-board {
   background-color: red;
   height: 550px;
+  width: 100%;
+}
+
+#score-board {
+  position: absolute;
+  background-color: black;
+  color: red;
+  font-weight: strong;
+  font-size: 50px;
+  height: 250px;
+  width: 500px;
+  margin: 30px 35%;
+  text-align: center;
+}
+
+.players {
+  display: inline-block;
+  margin: 0px;
+  font-size: 30px;
+  text-align: center;
+  float: center;
+  padding: 0;
+}
+
+.score  {
+    display: block;
+    color: yellow;
+}
+
+#player1 {
+  margin-right: 150px;
 }
 
 #road1 {
@@ -9,7 +40,6 @@
   height: 150px;
   width: 100%;
   margin-top: 350px;
-
   background-color: black;
 }
 
@@ -19,7 +49,6 @@
   height: 150px;
   width: 100%;
   margin-top: 510px;
-
   background-color: black;
 }
 
@@ -36,8 +65,8 @@ hr {
 
 .car {
   display: inline-block;
-  height: 140px;
-  width: 390px;
+  height: 130px;
+  width: 130px;
   vertical-align: top;
 }
 
@@ -45,7 +74,7 @@ hr {
   display: inline-block;
   background-color: blue;
   position: absolute;
-  margin-top: 0px;
+  margin-top: 360px;
   margin-left: 0px;
   overflow: auto;
 
@@ -55,7 +84,7 @@ hr {
   display: inline-block;
   background-color: white;
   position: absolute;
-  margin-top: 140px;
+  margin-top: 520px;
   margin-left: 0px;
   overflow: auto;
 }
