@@ -16,7 +16,8 @@ $(document).ready(function() {
 
 var car1score = 0;
 var car2score = 0;
-var ableMove = false;
+//can't move without starting race
+var ableMove;
   //var car1left = $('#car1').css('margin-left');
   //var car2left = $('#car2').css('margin-left');
 
@@ -60,7 +61,7 @@ var ableMove = false;
       };
     };
 
-
+    //car1 win conditions + update score
     if($('#car1').css('margin-left') === "920px"){
           car1score++;
           $('#score1').empty();
@@ -69,6 +70,7 @@ var ableMove = false;
           console.log("help")
     };
 
+    //car2 win conditions + update score
     if($('#car2').css('margin-left') === "920px"){
           car2score++;
           $('#score2').empty();
@@ -79,6 +81,7 @@ var ableMove = false;
   };
   });
 
+//Start Race button - starts countdown, resets car position, enable move
 var buttonClicked = false;
   $('.btn-default').click(function(event) {
     if (buttonClicked === false){
@@ -94,7 +97,7 @@ var buttonClicked = false;
 
 
 
-
+  //timers for countdown lights
   function startRedTimer(){
     setTimeout(redTimer, 1000);
   }
@@ -135,6 +138,7 @@ var buttonClicked = false;
   //   ableMove = true;
   // });
 
+  //Reset Score button - resets score, car position
   $('.btn-success').click(function(event) {
     $('#car1').css('margin-left', '50px');
     $('#car2').css('margin-left', '50px');
