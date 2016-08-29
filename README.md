@@ -8,65 +8,49 @@ that race across the screen.
 
 ##user stories:
 1. two player game
-2. a user sees their car and the road to travel
-3. use arrow keys and or wasd to move car across road
-4. navigate around roadblocks(randomly created?) to reach the finish line
-5. the user wins when they cross the finish line
+2. a player sees their car and the finish line
+3. player 1 presses 'D' to move and player 2 presses 'L' to move
+4. a player wins when they cross the finish line
 
 
 ##data structures:
 1. player constructor
 	- player1
 	- player2
-	- lives counter
 
 
 2. car constructor
 	- car1
 	- car2
 	- .eventlistener('press'. move())
-	- if (hit roadblock){decrease lives}
 
-3. roadblock constructor
-	- .create   (random?)
-	- .crashCar
-
-4. road
+3. road
 	- background?
 	- starting line
 	- finish line
 
-5. start game button?
+4. start game button?
 	- countdown?
 
-6. reset button
-7. game over/win conditions
-8. crash conditions
-9. if(lives === 0){game over}
+5. reset button
+6. game over/win conditions
+
 
 
 
 ##development stories:
-1. user can see road
-2. cars begin at starting line
-3. keypresses move cars
-4. if(hit roadblock){decrease lives}
-5. if(lives === 0){game over}
-6. if(car reaches finish line){player wins}
-
-
+1. user can see car, road, finish line
+2. user presses start game to begin countdown
+3. when countdown finish, cars can move
+4. crossing finish line adds to score
 
 
 ##potential challenges
 1. how to move car
-2. randomize roadblocks at beginning?
-3. crash animation?
+2. countdown
+3. styling
 
 
-
-
-set map with set roadblocks populate board
-new map button?
 
 
 
